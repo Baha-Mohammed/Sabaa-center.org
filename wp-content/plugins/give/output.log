@@ -1,0 +1,131 @@
+Running php-build composer
+WARNING! Your password will be stored unencrypted in /home/runner/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+Pulling docker.pkg.github.com/impress-org/givewp/php-actions_composer_givewp:php-7.2-build2
+Error response from daemon: manifest for docker.pkg.github.com/impress-org/givewp/php-actions_composer_givewp:php-7.2-build2 not found: manifest unknown: Docker image reference php-actions_composer_givewp:php-7.2-build2 not found under repo "impress-org"
+Dockerfile:
+FROM php:7.2-cli-alpine
+RUN apk add --update --no-cache zip git bash openssh
+Sending build context to Docker daemon  36.33MB
+Step 1/2 : FROM php:7.2-cli-alpine
+7.2-cli-alpine: Pulling from library/php
+801bfaa63ef2: Pulling fs layer
+30e209609427: Pulling fs layer
+320f26ee9b1c: Pulling fs layer
+4612e05a72cf: Pulling fs layer
+f1478d838f46: Pulling fs layer
+c88517be8365: Pulling fs layer
+142abe9b67c6: Pulling fs layer
+181891da1ea0: Pulling fs layer
+2a0fa75da19b: Pulling fs layer
+4612e05a72cf: Waiting
+f1478d838f46: Waiting
+c88517be8365: Waiting
+142abe9b67c6: Waiting
+181891da1ea0: Waiting
+2a0fa75da19b: Waiting
+320f26ee9b1c: Verifying Checksum
+320f26ee9b1c: Download complete
+801bfaa63ef2: Verifying Checksum
+801bfaa63ef2: Download complete
+30e209609427: Verifying Checksum
+30e209609427: Download complete
+801bfaa63ef2: Pull complete
+4612e05a72cf: Download complete
+c88517be8365: Verifying Checksum
+c88517be8365: Download complete
+181891da1ea0: Verifying Checksum
+181891da1ea0: Download complete
+f1478d838f46: Verifying Checksum
+f1478d838f46: Download complete
+2a0fa75da19b: Verifying Checksum
+2a0fa75da19b: Download complete
+142abe9b67c6: Verifying Checksum
+142abe9b67c6: Download complete
+30e209609427: Pull complete
+320f26ee9b1c: Pull complete
+4612e05a72cf: Pull complete
+f1478d838f46: Pull complete
+c88517be8365: Pull complete
+142abe9b67c6: Pull complete
+181891da1ea0: Pull complete
+2a0fa75da19b: Pull complete
+Digest: sha256:2eb165856ea5cbb2a7dd916d7e2a74ec9db1c5d1f5bd3871f50b0fe0a37fd356
+Status: Downloaded newer image for php:7.2-cli-alpine
+ ---> bf1223dcd6fd
+Step 2/2 : RUN apk add --update --no-cache zip git bash openssh
+ ---> Running in a7b3cb10d55b
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/community/x86_64/APKINDEX.tar.gz
+(1/13) Installing readline (8.0.4-r0)
+(2/13) Installing bash (5.0.17-r0)
+Executing bash-5.0.17-r0.post-install
+(3/13) Installing expat (2.2.9-r1)
+(4/13) Installing pcre2 (10.35-r0)
+(5/13) Installing git (2.26.3-r0)
+(6/13) Installing openssh-keygen (8.3_p1-r2)
+(7/13) Installing openssh-client (8.3_p1-r2)
+(8/13) Installing openssh-sftp-server (8.3_p1-r2)
+(9/13) Installing openssh-server-common (8.3_p1-r2)
+(10/13) Installing openssh-server (8.3_p1-r2)
+(11/13) Installing openssh (8.3_p1-r2)
+(12/13) Installing unzip (6.0-r8)
+(13/13) Installing zip (3.0-r8)
+Executing busybox-1.31.1-r19.trigger
+OK: 34 MiB in 43 packages
+Removing intermediate container a7b3cb10d55b
+ ---> 6a9d37cf2b6f
+Successfully built 6a9d37cf2b6f
+Successfully tagged docker.pkg.github.com/impress-org/givewp/php-actions_composer_givewp:php-7.2-build2
+The push refers to repository [docker.pkg.github.com/impress-org/givewp/php-actions_composer_givewp]
+3214f3941042: Preparing
+0a1e5e00585b: Preparing
+6cfea6e4001e: Preparing
+5b838bbb8048: Preparing
+493cc3941b45: Preparing
+5d718d40b44e: Preparing
+24e52497c24f: Preparing
+86d905c1f58e: Preparing
+22573737ba76: Preparing
+777b2c648970: Preparing
+5d718d40b44e: Waiting
+24e52497c24f: Waiting
+86d905c1f58e: Waiting
+22573737ba76: Waiting
+777b2c648970: Waiting
+6cfea6e4001e: Pushed
+493cc3941b45: Pushed
+0a1e5e00585b: Pushed
+3214f3941042: Pushed
+5b838bbb8048: Pushed
+24e52497c24f: Pushed
+86d905c1f58e: Pushed
+5d718d40b44e: Pushed
+22573737ba76: Pushed
+777b2c648970: Pushed
+php-7.2-build2: digest: sha256:f1169d1e7b3706fc60eb8b36299e6588e4f656cacfdaf9c5ff1c42fb2ca3034d size: 2414
+Docker tag: docker.pkg.github.com/impress-org/givewp/php-actions_composer_givewp:php-7.2-build2
+No private keys supplied
+Command: composer install --no-progress --no-interaction
+Running php-build composer
+WARNING! Your password will be stored unencrypted in /home/runner/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+Pulling docker.pkg.github.com/impress-org/givewp/php-actions_composer_givewp:php-7.2-build2
+WARNING: ⚠️ Failed to pull manifest by the resolved digest. This registry does not
+	appear to conform to the distribution registry specification; falling back to
+	pull by tag.  This fallback is DEPRECATED, and will be removed in a future
+	release.  Please contact admins of https://docker.pkg.github.com. ⚠️
+
+php-7.2-build2: Pulling from impress-org/givewp/php-actions_composer_givewp
+Digest: sha256:f1169d1e7b3706fc60eb8b36299e6588e4f656cacfdaf9c5ff1c42fb2ca3034d
+Status: Image is up to date for docker.pkg.github.com/impress-org/givewp/php-actions_composer_givewp:php-7.2-build2
+docker.pkg.github.com/impress-org/givewp/php-actions_composer_givewp:php-7.2-build2
+Docker tag: docker.pkg.github.com/impress-org/givewp/php-actions_composer_givewp:php-7.2-build2
+No private keys supplied
+Command: composer install --no-dev --no-progress --no-interaction
